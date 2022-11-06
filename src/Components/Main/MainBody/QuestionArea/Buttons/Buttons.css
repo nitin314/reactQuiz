@@ -1,0 +1,31 @@
+.Buttons{
+    display: flex;
+    gap: 1rem;
+    flex: 1;
+    padding: 1rem;
+    background-color: var(--primary-color);
+}
+
+.prev-next-btn{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+
+button.prev-question , button.next-question , button.answer-check{
+    min-width: 5rem;
+    border: 2px double var(--primary-color);
+    font-weight: 600;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    transition: background-color  0.5s ease, color  0.5s ease;
+
+}
+
+button.prev-question:hover , button.next-question:hover , button.answer-check:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 2px double var(--secondary-color);
+}    

@@ -1,0 +1,15 @@
+.MainBody{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 1000px;
+    margin:  auto;
+}
+
+
+@media screen and (max-width:800px) {
+    .MainBody{
+        flex-direction: column;
+    }
+}
+    

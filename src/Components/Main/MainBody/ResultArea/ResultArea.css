@@ -1,0 +1,37 @@
+.ResultArea{
+    flex: 2;
+    box-shadow: 0px 0px 3px 1px rgb(210, 210, 210);
+    border-radius: 1rem;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading-result-area{
+    padding: 1rem;
+    background-color: var(--primary-color);
+    font-weight: 600;
+    color: var(--primary-font-color);
+}
+
+.item-result-area{
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    flex: 1;
+}
+
+.item-result-area div{
+    background-color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1rem;
+    padding: 0.5rem;
+}
+
+
+.val{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
