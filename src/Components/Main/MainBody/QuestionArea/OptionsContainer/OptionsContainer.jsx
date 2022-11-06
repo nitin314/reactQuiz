@@ -1,26 +1,52 @@
 import { useState } from 'react';
 import './OptionsContainer.css';
 
-export default function OptionsContainer(){
+export default function OptionsContainer({questionOptions, selectedOption, setSelectedOption, questionStatus , userSelectedAnswer, correctAnswer}){
+    const [option1, option2, option3, option4] = questionOptions;
+    // runs when something has changed in the input container and set the selectedOption state value
+    function onChangeHandler(e){
+        console.log(e.target.value);
+        setSelectedOption(e.target.value);
+    }
+
+    let options;
+    // conditioal rendering of options
+    if(questionStatus === 'attempted' && userSelectedAnswer === correctAnswer){
+        options = questionOptions.map(option =>{
+            return(
+                <div className={option === userSelectedAnswer ? 'option green-option' : 'option'} key ={option} >
+                    <label htmlFor={option}>{option}</label>
+                    <input type="radio" id={option} name="drone" value={option} /*checked = {selectedOption === option1}*/ />
+                </div>
+            )
+        })
+    }
+    else{
+        if(questionStatus === 'attempted' && userSelectedAnswer !== correctAnswer){
+            options = questionOptions.map(option =>{
+                return(
+                    <div className={option === userSelectedAnswer ? 'option red-option' : 'option'} key ={option} >
+                        <label htmlFor={option}>{option}</label>
+                        <input type="radio" id={option} name="drone" value={option} /*checked = {selectedOption === option1}*/ />
+                    </div>
+                )
+            })
+        }
+        else{
+            options = questionOptions.map(option =>{
+                return(
+                    <div className= 'option' key ={option} >
+                        <label htmlFor={option}>{option}</label>
+                        <input type="radio" id={option} name="drone" value={option} /*checked = {selectedOption === option1}*/ />
+                    </div>
+                )
+            })
+            }
+    }
 
     return(
-        <div className="OptionsContainer">
-            <div className='option'>
-                <label for="New Delhi">New Delhi</label>
-                <input type="radio" id="New Delhi" name="drone" value="New Delhi" />
-            </div>
-            <div className='option'>
-                <label for="Maharashtra">Maharashtra</label>
-                <input type="radio" id="Maharashtra" name="drone" value="Maharashtra"  />
-            </div>  
-            <div className='option'>
-                <label for="Karnataka">Karnataka</label>
-                <input type="radio" id="Karnataka" name="drone" value="Karnataka" />
-            </div>
-            <div className='option'>
-                <label for="Orissa">Orissa</label>
-                <input type="radio" id="Orissa" name="drone" value="Orissa" />
-            </div>
+        <div className="OptionsContainer" onChange={onChangeHandler}>
+            {options}
         </div>
     );
 }

@@ -1,9 +1,9 @@
 import './Question.css';
 
-export default function Question(){
+export default function Question({questionHeading}){
     return(
         <div className="Question">
-            <p>What is the capital of India?</p>
+            <p>{questionHeading}</p>
         </div>
     )
 }

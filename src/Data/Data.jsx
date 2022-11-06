@@ -1,7 +1,9 @@
+// status -> 'attempted' or 'in-attempted
+
 const Data = [
     {
         QuestionNum : 1,
-        Question : "What is the capital of India?",
+        QuestionHeading : "What is the capital of India?",
         options  : ['New Delhi','Gujrat','Kolkata','Chennai'],
         Answer   : 'New Delhi',
         status : 'un-attempted',
@@ -9,7 +11,7 @@ const Data = [
     },
     {
         QuestionNum: 2,
-        Question : "Which is the biggest Indian state by population?",
+        QuestionHeading : "Which is the biggest Indian state by population?",
         options  : ['New Delhi','Gujrat','Kolkata','Uttar Pradesh'],
         Answer   : 'Uttar Pradesh',
         status: 'un-attempted',
@@ -17,7 +19,7 @@ const Data = [
     },
     {
         QuestionNum: 3,
-        Question : "Whos was+ the first prime Minister of india",
+        QuestionHeading  : "Whos was+ the first prime Minister of india",
         options  : ['Nehru','Gandhi','Sonia', 'Modi'],
         Answer   : 'Nehru',
         status: 'un-attempted',
@@ -25,7 +27,7 @@ const Data = [
     },
     {
         QuestionNum: 4,
-        Question : "Where is Kedarnath Temple located?",
+        QuestionHeading  : "Where is Kedarnath Temple located?",
         options  : ['New Delhi','Uttarakhand','Gujrat','Uttar Pradesh'],
         Answer   : 'Uttarakhand',
         status: 'un-attempted',
@@ -33,7 +35,7 @@ const Data = [
     },
     {
         QuestionNum: 5,
-        Question : "'satyameva jayate' in emblem of india is taken from?",
+        QuestionHeading : "'satyameva jayate' in emblem of india is taken from?",
         options  : ['Rigved','Ramayana','Mundak Upnishad','Mahabharat'],
         Answer   : 'Mundak Upnishad',
         status: 'un-attempted',
@@ -41,7 +43,7 @@ const Data = [
     },
     {
         QuestionNum: 6,
-        Question : "Which Indian State has the highest area?",
+        QuestionHeading  : "Which Indian State has the highest area?",
         options  : ['New Delhi','Uttarakhand','Rajasthan','Uttar Pradesh'],
         Answer   : 'Rajasthan',
         status: 'un-attempted',

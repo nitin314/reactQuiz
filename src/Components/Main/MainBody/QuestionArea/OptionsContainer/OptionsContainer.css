@@ -20,3 +20,12 @@
 input[type = "radio"]{
     width: 1rem;
 }
+
+
+.green-option{
+    background-color: green;
+}
+
+.red-option{
+    background-color: red;
+}
