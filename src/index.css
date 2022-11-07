@@ -8,18 +8,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-* {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+html{
+  height: 100vh;
+  background-image: linear-gradient(179deg, #03a9f4 20%,#ffc200);
 }
 
 
 
 @media screen and (max-width:800px) {
   html{
-      font-size: 10px;
+      font-size: 12px;
   }
 }
   

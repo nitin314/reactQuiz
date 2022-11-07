@@ -4,7 +4,8 @@ import OptionsContainer from './OptionsContainer/OptionsContainer';
 import Question from './Question/Question';
 import './QuestionArea.css';
 
-export default function QuestionArea({questions ,setQuestions ,currentQuestionNumber,setCurrentQuestionNumber}){
+export default function QuestionArea({questions ,setQuestions}){
+    const [currentQuestionNumber , setCurrentQuestionNumber] = useState(0);
     const[selectedOption, setSelectedOption] = useState(null);
     return(
         <div className="QuestionArea">
