@@ -1,3 +1,4 @@
+import React from 'react';
 import './ResultArea.css';
 
 export default function ResultArea({questions}){

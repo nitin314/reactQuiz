@@ -1,3 +1,4 @@
+import React from 'react'
 import QuestionArea from "./QuestionArea/QuestionArea";
 import ResultArea from "./ResultArea/ResultArea";
 import './MainBody.css';

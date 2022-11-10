@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from 'react';
 import Buttons from './Buttons/Buttons';
 import OptionsContainer from './OptionsContainer/OptionsContainer';

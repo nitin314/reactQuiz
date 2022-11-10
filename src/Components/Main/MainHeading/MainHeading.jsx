@@ -1,3 +1,4 @@
+import React from 'react';
 import './MainHeading.css';
 export default function MainHeading(){
     console.log('main heading');

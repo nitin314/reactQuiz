@@ -1,3 +1,4 @@
+import React from 'react';
 import MainHeading from "./MainHeading/MainHeading";
 import './Main.css'
 import MainBody from "./MainBody/MainBody";
